@@ -1,0 +1,122 @@
+.section__one {
+  min-height: calc(100vh - 108px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+
+  &_content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 100px;
+    position: relative;
+    &::before {
+      content: "";
+      width: 454px;
+      height: 492px;
+      transform: rotate(13.51deg) translateY(-50%);
+      filter: blur(174px);
+      background: rgb(77, 91, 206);
+      opacity: 0.4;
+      position: absolute;
+      right: 265px;
+      top: 50%;
+      @media (max-width: 929px) {
+        display: none;
+      }
+    }
+    &::after {
+      content: "";
+      width: 454px;
+      height: 492px;
+      transform: rotate(13.51deg) translateY(-50%);
+      filter: blur(174px);
+      background: rgb(67, 217, 173);
+      opacity: 0.4;
+      position: absolute;
+      left: 289px;
+      top: 50%;
+      @media (max-width: 929px) {
+        display: none;
+      }
+    }
+    @media (max-width: 768px) {
+      row-gap: 50px;
+    }
+  }
+
+  &_title {
+    font-weight: 400;
+    font-size: 62px;
+    margin-bottom: 100px;
+    line-height: 66px;
+    
+    span {
+      color: var(--color2);
+    }
+  }
+
+  &_span_one {
+      color: var(--color3) !important;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 22px;
+  }
+
+  &_span_two {
+    color: #4d5bce !important;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 36px;
+
+    @media (max-width: 768px) {
+      color: #43d9ad;
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+
+  &_information {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+  }
+
+  &_text {
+    color: #607b96;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  &_link {
+    color: #ffffff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 10px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    transition: opacity 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+      opacity: 0.9;
+    }
+
+    span:first-child {
+      color: #4d5bce;
+    }
+
+    span:nth-child(2) {
+      color: #43d9ad;
+    }
+
+    span:last-child {
+      color: #e99287;
+      text-decoration: underline;
+      text-decoration-skip-ink: none;
+    }
+  }
+}

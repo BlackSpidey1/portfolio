@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Inter:wght@100..900&display=swap");
+
+:root {
+  --background: #011627;
+  --color: #ffffff;
+  --font-family: "Fira Code", sans-serif;
+  --color2: rgb(229, 233, 240);
+  --color3: rgb(67, 217, 173);
+  --padding-right: 153px;
+  --aboutColor:rgb(67, 217, 173);
+  --mediaColor: rgb(30, 45, 61);
+  --contactColor:rgb(229, 233, 240) ;
+  --projectBg:#011221;
+  --projectTextColor: #607b96;
+  --buttonColor: #ffffff;
+  --arrowColor: white;
+  --headerLinksColor: #607b96;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--color);
+  font-family: var(--font-family);
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+
+  &:focus-visible {
+    outline: none;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: #607b96;
+}
+
+img {
+  display: inline-block;
+  vertical-align: middle;
+  // object-fit: cover;
+}
+
+span {
+  display: block;
+}
+
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--background);
+  color: var(--color);
+  transition: all 500ms;
+  &.light{
+    --background: #ffffff;
+    --color: #011627;
+    --color2: rgb(30, 45, 61);
+    --color3: rgb(67, 217, 173);
+    --padding-right: 108px;
+    --aboutColor: rgb(77, 91, 206);                 
+    --mediaColor: #607b96;
+    --contactColor:rgb(229, 233, 240);
+    --projectBg:#72879c;
+    --projectTextColor: rgb(229, 233, 240);
+    --buttonColor: #ffffff;
+    --arrowColor: #72879c;
+    --headerLinksColor: rgb(237, 10, 10);
+  }
+  
+}
