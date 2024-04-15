@@ -9,7 +9,7 @@ import htmlIcon from "../../assets/icons2/html-icon.svg";
 import cssIcon from "../../assets/icons2/css-icon.svg";
 import jsIcon from "../../assets/icons2/javascript-icon.svg";
 import reactIcon from "../../assets/icons2/react-js-icon.svg";
-import sassIcon from "../../assets/icons2/sass-icon.svg";
+import sassIcon from "@/assets/icons2/sass-icon.svg";
 import tsIcon from "../../assets/icons2/typescript-icon.svg";
 import gitIcon from "../../assets/icons2/git-icon.svg";
 import mailIcon from "../../assets/icons2/mail-icon.svg";
