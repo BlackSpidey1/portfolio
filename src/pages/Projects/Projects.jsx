@@ -9,6 +9,10 @@ import { Link } from "react-router-dom";
 import useMediaQuery from "@/hooks/useMediaQuery";
 import Loader from "../../components/Loader/Loader";
 
+import react from "/src/assets/icons/react.svg"
+import figma from "/src/assets/icons/figma.svg"
+import close from "/src/assets/icons/close.svg"
+
 export default function Projects() {
   const repositories = useSelector((state) => state.github.repositories);
   const isLoading = useSelector((state) => state.github.isLoading);
@@ -36,7 +40,7 @@ export default function Projects() {
             {!isMobile ? (
               <h3 className={styles.section__one_top_title}>
                 React; Layouts
-                <img src="/src/assets/icons/close.svg" alt="Close" />
+                <img src={close} alt="Close" />
               </h3>
             ) : null}
           </div>
@@ -56,7 +60,7 @@ export default function Projects() {
                   }
                 >
                   <img
-                    src="/src/assets/icons/react.svg"
+                    src={react}
                     alt="React/JavaScript"
                   />
                   React/JavaScript
@@ -72,7 +76,7 @@ export default function Projects() {
                 <div className={styles.section__one_bottom_left_information}>
                   <img
                     className={styles.section__one_bottom_left_information_img}
-                    src="/src/assets/icons/figma.svg"
+                    src={figma}
                     alt="Figma"
                   />
                   Layouts
